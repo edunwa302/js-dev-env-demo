@@ -3,8 +3,8 @@ let path = require('path');
 let open = require('open');
 const port = 3080;
 const app = express();
-// tell exp which route it shd follow
 
+// tell exp which route it shd follow
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../src/index.html'));
 });
